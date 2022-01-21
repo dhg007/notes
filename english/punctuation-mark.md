@@ -1,4 +1,4 @@
-punctuation mark  表单符号
+punctuation mark  标点符号
 ```
 ! 叹号 exclamation mark/bang
 ? 问号 question mark
