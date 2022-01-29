@@ -1,7 +1,7 @@
 import Comparator from "../../utils/Comparator.mjs";
 import DoublyLinkedListNode from "./DoublyLinkedListNode.mjs";
 
-class DoublyLinkedList {
+export default class DoublyLinkedList {
   constructor(comparatorFn) {
     this.head = null;
     this.tail = null;

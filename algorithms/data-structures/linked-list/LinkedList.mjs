@@ -6,7 +6,7 @@ list = new LinkedList()
 list.append(1).append(2).append(3).append(4).append(5).append(6).append(7)
 
  */
-class LinkedList {
+export default class LinkedList {
   constructor(comparatorFn) {
     this.head = null;
     this.tail = null;
@@ -14,7 +14,7 @@ class LinkedList {
     this.compare = new Comparator(comparatorFn);
   }
 
-  
+
 
   prepend(value) {
     let newNode = new LinkedListNode(value, this.head);
@@ -33,7 +33,7 @@ class LinkedList {
     if (!this.head) {
       this.head = newNode;
       this.tail = newNode;
-      
+
       return this;
     }
 
@@ -158,7 +158,7 @@ class LinkedList {
       .toString();
   }
 
-  reverse(){
+  reverse() {
     let cur = this.head
     let pre = null
     let next
@@ -167,12 +167,12 @@ class LinkedList {
       next = cur.next
       cur.next = pre
       pre = cur
-      cur= next
+      cur = next
     }
-    
+
     this.tail = this.head
     this.head = pre
-    
+
     return this
   }
 }
