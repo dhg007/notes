@@ -3,11 +3,11 @@
 
 ## 安装
 
-- 通过 docker 安装 mysql 学习，体验是很棒的，命令如下
+- 通过 docker 安装 mysql 学习，体验很棒，命令如下
 
   `docker run --name some-mysql -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=secret -d mysql`
 
-- 然后进入、连接登录开始吧
+- 然后进入、连接登录开始
   1. `docker exec -it some-mysql bash` 进入容器
   2. `mysql -u root -p`，回车输入 `secret`
 
